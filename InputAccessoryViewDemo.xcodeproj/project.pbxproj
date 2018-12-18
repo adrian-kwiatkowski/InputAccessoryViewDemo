@@ -12,6 +12,8 @@
 		59DE53DE21C91AED0090AAC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DE53DC21C91AED0090AAC8 /* Main.storyboard */; };
 		59DE53E021C91AEF0090AAC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59DE53DF21C91AEF0090AAC8 /* Assets.xcassets */; };
 		59DE53E321C91AEF0090AAC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DE53E121C91AEF0090AAC8 /* LaunchScreen.storyboard */; };
+		59DE53EB21C91BDA0090AAC8 /* InputAccView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DE53EA21C91BDA0090AAC8 /* InputAccView.swift */; };
+		59DE53ED21C91BE10090AAC8 /* InputAccView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59DE53EC21C91BE10090AAC8 /* InputAccView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		59DE53DF21C91AEF0090AAC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59DE53E221C91AEF0090AAC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59DE53E421C91AEF0090AAC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59DE53EA21C91BDA0090AAC8 /* InputAccView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAccView.swift; sourceTree = "<group>"; };
+		59DE53EC21C91BE10090AAC8 /* InputAccView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputAccView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				59DE53DF21C91AEF0090AAC8 /* Assets.xcassets */,
 				59DE53E121C91AEF0090AAC8 /* LaunchScreen.storyboard */,
 				59DE53E421C91AEF0090AAC8 /* Info.plist */,
+				59DE53EA21C91BDA0090AAC8 /* InputAccView.swift */,
+				59DE53EC21C91BE10090AAC8 /* InputAccView.xib */,
 			);
 			path = InputAccessoryViewDemo;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 				59DE53E321C91AEF0090AAC8 /* LaunchScreen.storyboard in Resources */,
 				59DE53E021C91AEF0090AAC8 /* Assets.xcassets in Resources */,
 				59DE53DE21C91AED0090AAC8 /* Main.storyboard in Resources */,
+				59DE53ED21C91BE10090AAC8 /* InputAccView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59DE53EB21C91BDA0090AAC8 /* InputAccView.swift in Sources */,
 				59DE53DB21C91AED0090AAC8 /* ViewController.swift in Sources */,
 				59DE53D921C91AED0090AAC8 /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H634JM33L;
 				INFOPLIST_FILE = InputAccessoryViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H634JM33L;
 				INFOPLIST_FILE = InputAccessoryViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
