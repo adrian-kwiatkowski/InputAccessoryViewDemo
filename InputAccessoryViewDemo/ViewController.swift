@@ -28,6 +28,10 @@ class ViewController: UIViewController {
 
     @IBAction func showButtonTapped(_ sender: Any) {
         inputAccessoryView?.isHidden = false
+        
+        inputAccessoryView?.hideButtonAction = {
+            self.inputAccessoryView?.isHidden = true
+        }
     }
     
     @IBAction func endEditingButtonTapped(_ sender: Any) {
