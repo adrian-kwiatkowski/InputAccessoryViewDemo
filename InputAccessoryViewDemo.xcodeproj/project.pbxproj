@@ -58,14 +58,14 @@
 		59DE53D721C91AED0090AAC8 /* InputAccessoryViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				59DE53EC21C91BE10090AAC8 /* InputAccView.xib */,
+				59DE53EA21C91BDA0090AAC8 /* InputAccView.swift */,
 				59DE53D821C91AED0090AAC8 /* AppDelegate.swift */,
 				59DE53DA21C91AED0090AAC8 /* ViewController.swift */,
 				59DE53DC21C91AED0090AAC8 /* Main.storyboard */,
 				59DE53DF21C91AEF0090AAC8 /* Assets.xcassets */,
 				59DE53E121C91AEF0090AAC8 /* LaunchScreen.storyboard */,
 				59DE53E421C91AEF0090AAC8 /* Info.plist */,
-				59DE53EA21C91BDA0090AAC8 /* InputAccView.swift */,
-				59DE53EC21C91BE10090AAC8 /* InputAccView.xib */,
 			);
 			path = InputAccessoryViewDemo;
 			sourceTree = "<group>";

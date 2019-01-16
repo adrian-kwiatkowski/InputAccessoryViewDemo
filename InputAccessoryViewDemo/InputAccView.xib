@@ -17,8 +17,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSQ-Z2-5ih">
-                    <rect key="frame" x="96" y="15" width="183" height="30"/>
-                    <state key="normal" title="Hide Input Accessory View">
+                    <rect key="frame" x="79" y="15" width="217" height="30"/>
+                    <state key="normal" title="↓ Hide Input Accessory View ↓">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>

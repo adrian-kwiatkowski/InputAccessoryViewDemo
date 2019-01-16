@@ -24,19 +24,39 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    @IBAction func showButtonTapped(_ sender: Any) {
-        inputAccessoryView?.isHidden = false
         
         inputAccessoryView?.hideButtonAction = {
-            self.inputAccessoryView?.isHidden = true
+            self.hideAccessoryView()
+        }
+    }
+    
+    func hideAccessoryView() {
+        guard inputAccessoryView != nil else { return }
+        UIView.animate(withDuration: 0.5, animations: {
+            self.inputAccessoryView!.transform = CGAffineTransform(translationX: 0.0, y: self.inputAccessoryView!.frame.height)
+            self.inputAccessoryView!.alpha = 0.0
+        }, completion: { (finished) in
+            self.inputAccessoryView!.transform = CGAffineTransform.identity
+            self.inputAccessoryView!.alpha = 1.0
+            self.inputAccessoryView!.isHidden = true
+        })
+    }
+    
+    @IBAction func showButtonTapped(_ sender: Any) {
+        if inputAccessoryView != nil, inputAccessoryView!.isHidden {
+            inputAccessoryView!.isHidden = false
+            inputAccessoryView!.alpha = 0.0
+            inputAccessoryView!.transform = CGAffineTransform(translationX: 0.0, y: inputAccessoryView!.frame.height)
+            UIView.animate(withDuration: 0.5) {
+                self.inputAccessoryView!.transform = CGAffineTransform.identity
+                self.inputAccessoryView!.alpha = 1.0
+            }
         }
     }
     
     @IBAction func endEditingButtonTapped(_ sender: Any) {
         view.endEditing(true)
-        inputAccessoryView?.isHidden = true
+        if inputAccessoryView?.isHidden == false { hideAccessoryView() }
     }
 }
 
